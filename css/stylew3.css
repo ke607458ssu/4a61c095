@@ -1,0 +1,36 @@
+.bg {
+    background-color: lightseagreen;
+}
+h1 {
+    margin: 10px auto;
+}
+h3 {
+    margin: 15px auto;
+}
+form {
+    color: dimgray;
+    font-family: Helvetica;
+    height: 700px;
+    width:  600px;
+    background-color: white;
+    box-shadow: 1px 3px 15px dimgrey;
+    text-align: left;
+    padding: 20px 40px;
+    line-height: 35px;
+    margin: auto;
+    margin-top: 50px;
+      
+}
+form label {
+    letter-spacing: 0.5px;
+    line-height: 40px;
+    display: inline-block;
+    width: 90px;
+}
+form input {
+    margin-right: 10px;
+}
+form select {
+    width: 90px;
+    margin: 10px 0px;
+}

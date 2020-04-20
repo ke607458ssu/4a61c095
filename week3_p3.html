@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>機票訂位範例</title>
+    <link rel="stylesheet" href="./css/stylew3.css">
+</head>
+
+<body class="bg">
+        
+        <!-- 重要元素input type=""-->
+        <!-- form TODO: -->
+        <form action="">
+        <h1>機票訂位範例</h1>
+
+
+        <!--passportNumber 護照號碼-->
+        <label for="passportNumber">護照號碼</label>
+
+        <!--護照號碼text
+            1.限制輸入數字長度8碼 2.輸入框內加入文字 3. name & id 4.autofocus 5.必填-->
+        <input type="text" minlength="8" maxlength="8" placeholder="請輸入護照號碼" name="passportNumber" id="passportNumber" autofocus required>
+        <br/>
+        
+
+        <!-- email -->
+        <label for="email">電子信箱</label>
+        <input type="text" placeholder="請輸入電子信箱" name="email" id="email" autofocus required>
+        <br/>
+
+        <!-- password 密碼 -->
+        <label for="password">密碼</label>
+        <input type="text" minlength="8" maxlength="8" placeholder="請輸入密碼" name="password" id="password" autofocus required>
+        <br/>
+
+        <!-- travelNumber 旅遊人數 限制人數1~15 -->
+        <label for="travelNumber" >旅客人數</label>
+        <input type="number" minlength="8" maxlength="8" name="travelNumber" id="travelNumber" max="15" min="1" width="30px" autofocus required>
+        <br/>
+
+        <!-- departTime 出發日期 -->
+        <label for="depart">出發時間</label>
+        <input type="date" name="departtime" id="departtime" required>
+        
+        <!-- returnTime 回程日期 -->
+        <label for="returnTime">回程日期</label>
+        <input type="date" name="returntime" id="returnTime" required>
+        <br/>
+
+        <!-- radio TODO: value-->
+        <!-- ripType機票類型 -->
+        <h3>機票類型</h3>
+
+        <!--單程票 oneWayTicket -->
+        <label for="oneWayTicket">單程票</label>
+        <input type="radio">
+        
+        <!-- 來回票 roundWayTicket-->
+        <label for="roundWayTicket">來回票</label>
+        <input type="radio">
+        <br/>
+        <!-- checkbox TODO: 額外服務-->
+        <h3>額外服務</h3>
+        <!--  additionLuggage 額外行李-->
+        <label for="additionLuggage">額外行李</label>
+        <input type="radio">
+
+        <!-- chooseSeat 自選座位 -->
+        <label for="chooseSeat">自選座位</label>
+        <input type="radio">
+
+        <!-- orderMeal 預定餐點 -->
+        <label for="orderMeal">預定餐點</label>
+        <input type="radio">
+        <br/>
+
+        <!--select meal TODO:-->
+        <!-- 餐點選擇 option 1.normal 一般餐 2.vegetarian 素食餐 3.mikeEggVegetarian 奶蛋素食餐-->
+        <h3>餐點選擇</h3>
+        <select name="meal" id="meal">
+            <option value="normal">一般餐</option>
+            <option value="vegetarian">素食餐</option>
+            <option value="mikeEggVegetarian">蛋奶素食餐</option>
+        </select>
+        <br/>
+
+        <!-- input submit & reset valueTODO:-->
+        <input type="submit" value="送出" style="width: 120px;height: 40px;background-color: lightseagreen;border: none;color: white;margin-right: 20px;">
+        <input type="reset" value="清除全部" style="width: 120px;height: 40px;background-color: tomato;color: white;margin-top: 50px;border: none;">
+        
+        </form>
+</body>
+
+</html>
